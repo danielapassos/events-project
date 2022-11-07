@@ -1,7 +1,8 @@
 import Button from '../ui/button';
 import DateIcon from '../icons/date-icon';
-import AddressIcon from 'components/icons/address-icon.js';
-import ArrowRightIcon from 'components/icons/arrow-right-color.js';
+import AddressIcon from '../icons/address-icon';
+import ArrowRightIcon from '../icons/arrow-right-icon';
+import classes from './event-item.module.css';
 
 function EventItem(props) {
   const { title, image, date, location, id } = props;
@@ -15,7 +16,7 @@ function EventItem(props) {
   const exploreLink = `/events/${id}`;
 
   return (
-    <li >
+    <li className={classes.item}>
       <img src={'/' + image} alt={title} />
       <div className={classes.content}>
         <div className={classes.summary}>

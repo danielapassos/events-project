@@ -9,7 +9,7 @@ function HomePage() {
     <div>
         <h1>This is the Home Page!</h1>
         <ul>
-            <EventsList items={EventsList}/>
+            <EventsList items={featuredEvents}/>
         </ul>
     </div>
   )
